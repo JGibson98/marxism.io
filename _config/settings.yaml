@@ -30,7 +30,7 @@ _content_root: _content
 _site_url: http://marxism.io
 
 # Folder name of your desired theme
-_theme: foundation-4
+_theme: marx
 
 # Entries should include timestamp YYYY-MM-DD-HHII
 _entry_timestamps: false

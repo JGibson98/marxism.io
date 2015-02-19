@@ -4,5 +4,8 @@
 #
 ###########################################################################################
 
-# Just an example use case
-# enable_analytics: no
+# Works with the analytics partial to only display analytics on a live site.
+disable_analytics: true
+
+# Sets a robots meta in the _doc_head partial to hide dev sites from search engines.
+hide_site: true

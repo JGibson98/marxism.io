@@ -1,8 +1,13 @@
 ---
-title: About Foundation Theme
-_template: page
 _fieldset: page
+title: About
+meta_title: SEO Title Used By Google
+meta_desc: "This is the page description which displays in Google's search results, it is important for SEO."
+alt_title: About Statarkers Theme
+_template: page
 ---
-The Foundation theme is built using [Foundation 4](http://foundation.zurb.com/) (a CSS and Javascript framework) on top of the [Statarkers](http://statamicthem.es/themes/statarkers-theme) theme for Statamic. Foundation 4 offers an excellent starting point for building responsive websites and the Statarkers theme offers a base set of files for building Statamic themes quickly and efficiently.
+Born from the idea of a blank canvas for starting your Statamic sites, this theme is loosely based on the popular [Starkers](http://viewportindustries.com/products/starkers/) theme for Wordpress. The idea being that you load this theme into your Statamic themes folder, add the dummy content, get designing and building your Statamic sites in even less time than you were already.
 
-The two work together to help you create a responsive website with a blog in minutes. The theme has been kept as simple as possible so that it can form a base to build off. Feel free to use it in your projects.
+You can use Statarkers in any way you wish, please feel free to fork it on github. As the theme is offered for free, it's also offered with limited support. If you find a bug, please let me know and I'll fix it as soon as possible. Any improvements and feature requests can be asked through github.
+
+Happy Statamic Themeing!

@@ -1,34 +1,73 @@
+hide: true
 include: meta                  # include the meta fields
 
 fields:
-  status:
-    display: Status
-    type: status
+  title:
+    instructions: "Enter the main title here."
+
+  main_section:
+    type: section
+    display: Main Content
+    instructions: "Enter your main content here."
+
+  author:
+    display: Author
+    type: users
+
+  featured:
+    display: Featured
+    type: select
+    instructions: "Select if you would like this to be featured."
+    options:
+      not_featured: "No"
+      is_featured: "Yes"
 
   categories:
     display: Categories
-    required: false
-    type: tags
-    instructions: Add categories.
-    
-  tags:                        # the template tag name -- in this example, {{ tags }}
-    display: Tags              # the control panel field label (optional)
-    required: false            # required: true/false for validation (optional, false by default)
-    default:                   # default value (optional)
-    type: tags                 # fieldtype (optional, text by default)
-    instructions: Add tags.    # instructions added above the field
-    
+    type: suggest
+    create: true
+    max_items: 3
+    multiple: true
+    instructions:
+      below: "Create or select an existing category (maximum 3)."
+    taxonomy:
+      folder: blog #make sure you rename this to the folder name of your blog
+      type: categories
+
+  tags:
+    display: Tags
+    type: suggest
+    create: true
+    max_items: 3
+    multiple: true
+    instructions:
+      below: "Create or select an existing tag (maximum 3)."
+    taxonomy:
+      folder: blog #make sure you rename this to the folder name of your blog
+      type: tags
+
+  main_img:
+    display: Main Image
+    type: file
+    destination: assets/img/blog  #make sure the folder exists and is writable
+    instructions:
+      below: "Add the main image here, this will also display as a thumbnail on the listing page."
+
+  video:
+    display: Video
+    type: textarea
+    instructions:
+      below: "Add the video embed code here."
+
   summary:
     display: Summary
     required: true
-    default:
     type: textarea
-    instructions: Add a short summary for the article here.
-    
+    instructions:
+      below: "Add a short summary here."
+
   content:
-    display: Article Content
-    required: false
-    default:
-    type: redactor
-    image_dir: assets/img/blog
-    instructions: Add the main article content here.
+    display: Main Content
+    type: markitup
+    instructions:
+      below: "Add the main content here."

@@ -8,3 +8,11 @@
 // Modules sit inside Layout components.
 // Modules can sometimes sit within other Modules, too.
 // Each Module should be designed to exist as a standalone component.
+
+nav__list--primary ul {
+    
+    display: inline;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}

@@ -11,8 +11,9 @@
 
 nav__list--primary ul {
     
-    display: inline;
-    margin: 0;
     list-style-type: none;
+    margin: 0;
     padding: 0;
+    overflow: hidden;
+    
 }

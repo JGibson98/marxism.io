@@ -13,6 +13,11 @@
 // =================
 // BASE RULES
 // =================
+
+
+
+
+
 @import "base";
 @import "../bower_components/uikit/scss/uikit.scss";
 @import "../bower_components/uikit/scss/components/autocomplete.scss";
@@ -34,3 +39,13 @@
 @import "modules/manifest.scss";
 @import "pages/manifest.scss";
 @import "theme/manifest.scss";
+
+
+.nav__list--primary ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
